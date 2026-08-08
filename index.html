@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plumbing</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .terminal {
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid #00ff41;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+            background-color: #0a0a0a;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #00ff41;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+        a {
+            color: #00ff41;
+            text-decoration: none;
+            border-bottom: 1px dashed #00ff41;
+        }
+        a:hover {
+            border-bottom: 1px solid #00ff41;
+            background-color: #002200;
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background: #00ff41;
+            animation: blink 1s infinite;
+            margin-left: 0.2em;
+            vertical-align: middle;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .papers {
+            margin-top: 2rem;
+            list-style: none;
+            padding-left: 0;
+        }
+        .papers li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <h1>THE PLUMBING</h1>
+        <p>
+            Welcome, truth-seeker.<br>
+            You have reached the hidden investigation room.<br>
+            We trace the pipes that control the world.
+        </p>
+        <p>
+            <span class="cursor"></span>
+        </p>
+        <p><strong>Available Research:</strong></p>
+        <ul class="papers">
+            <li>
+                <a href="https://the-plumbing.github.io/WHO-RUNS-THE-WORLD/WHO%20RUNS%20THE%20WORLD%20-%20A%20Mathematical%20Autopsy%20of%20the%20Structural%20Oligarchy.pdf" target="_blank">
+                    Who Runs the World? A Mathematical Autopsy of the Structural Oligarchy
+                </a> (PDF)
+            </li>
+            <!-- add more papers here in the future -->
+        </ul>
+        <p><strong>Support the research:</strong></p>
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; flex-wrap: nowrap;">
+            <div style="text-align: center; max-width: 180px;">
+                <p style="margin:0 0 0.3rem; font-weight:bold;">BTC</p>
+                <img src="btc_qr.png" alt="BTC QR" style="width: 120px; height: 120px; border: 1px solid #00ff41; padding: 2px; background: white;">
+                <p style="margin-top: 0.5rem; word-break: break-all; font-size: 0.8rem;"><code>1MP7y3PnTQDY4nKreU51vsnPAWFCDeY3Ht</code></p>
+            </div>
+            <div style="text-align: center; max-width: 180px;">
+                <p style="margin:0 0 0.3rem; font-weight:bold;">Monero</p>
+                <img src="xmr_qr.png" alt="XMR QR" style="width: 120px; height: 120px; border: 1px solid #00ff41; padding: 2px; background: white;">
+                <p style="margin-top: 0.5rem; word-break: break-all; font-size: 0.8rem;"><code>47YA44FZr3aBvixEVuc1rpNJe4Tts9kTnSFnZib7PKAic7hFFB1qSvHKbQ22qTALDpCtorCBpPq1ehM8iaHJdCgT8Yfx5vG</code></p>
+            </div>
+        </div>
+        <p>
+            More documents will surface when the time is right.<br>
+            Stay vigilant.
+        </p>
+    </div>
+</body>
+</html>
